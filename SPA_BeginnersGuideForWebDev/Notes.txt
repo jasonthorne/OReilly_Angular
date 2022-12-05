@@ -27,7 +27,7 @@ ng generate module moduleName
 3rd vid:
 
 create componenet:
-ng generate comonent componentName
+ng generate component componentName
 
 
 -------------

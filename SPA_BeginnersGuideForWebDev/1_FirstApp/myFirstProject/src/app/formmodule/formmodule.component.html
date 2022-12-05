@@ -1,0 +1,35 @@
+<!--<p>formmodule works!</p>-->
+
+<form (ngSubmit)="onSave(myForm)" #myForm="ngForm">
+    <table>
+        <tr>
+            <td>
+                <label>Name</label>
+            </td>
+            <td>
+                <input type="text" id="txtName" name="username" ngModel />
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label>Email</label>
+            </td>
+            <td>
+                <input type="email" id="txtEmail" name="useremail" ngModel />
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label>Phone</label>
+            </td>
+            <td>
+                <input type="text" id="txtPhone" name="userphone" ngModel />
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="submit" id="txtSubmit" value="save" />
+            </td>
+        </tr>
+    </table>
+</form>
