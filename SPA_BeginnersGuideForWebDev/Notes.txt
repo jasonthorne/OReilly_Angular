@@ -1,6 +1,20 @@
+1st vid:
+
 install cli:
 npm install -g @angular/cli
 
 install project shell (USE BASH TERMINAL :P):
 ng new myFirstProject
 
+build and run project (when in project dir :P):
+ng serve
+
+dev server:
+http://localhost:4200/
+
+stop serving app:
+ctrl+c
+
+-------------
+
+2nd vid:
