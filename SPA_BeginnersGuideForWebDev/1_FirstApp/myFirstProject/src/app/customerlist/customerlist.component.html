@@ -1,0 +1,71 @@
+<p>customerlist works!</p>
+
+<!--++++++++++++++++++++++++++  ngFor -->
+
+<table border="1">
+    <thead>
+        <tr>
+            <td>
+                Customer Name
+            </td>
+            <td>
+                Age
+            </td>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor = "let customer of customers"> <!--ng for loop ++++++++++++++++-->
+            <td>
+                {{customer.customerName}}
+            </td>
+            <td>
+                {{customer.age}}
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+<!--++++++++++++++++++++++++++    ng if    -->
+
+<h1>Customer Voting Interest</h1>
+
+<div>
+    Customer Name <input type="text" [(ngModel)] = "customerName">
+    Customer Age <input type="text" [(ngModel)] = "customerAge">
+    <input type="checkBox" [(ngModel)] = "isChecked" (click)="checkClick()"/>
+    <label>Check if ready to vote</label>
+</div>
+
+<div *ngIf = "isChecked; else noInterest"> <!-- if not clicked, call #noInterest    -->
+    Customer is interested
+</div>
+
+<ng-template #noInterest>
+    <div id="divNoInterest" *ngIf = "isHide"> <!-- visible or not, based on isHide -->
+        Customer is not interested
+    </div>
+</ng-template>
+
+<!--++++++++++++++++++++++++++ ng switch -->
+
+<div class="card">
+
+    <div class="card-header">
+        ng Switch example
+    </div>
+
+    <div class="card-body" [ngClass] = "'divColor'">
+        Input string: <input type="text" [(ngModel)]="countries"/>
+
+        <div [ngSwitch]="countries">
+            <div *ngSwitchCase = "'UK'">United Kingdom</div>
+            <div *ngSwitchCase = "'IE'">Ireland</div>
+            <div *ngSwitchCase = "'In'">India</div>
+            <div *ngSwitchCase = "'US'">United States</div>
+            <div *ngSwitchCase = "'CA'">Canada</div>
+            <div *ngSwitchDefault>This county is not in the memory</div>
+        </div>
+
+    </div>
+
+</div>

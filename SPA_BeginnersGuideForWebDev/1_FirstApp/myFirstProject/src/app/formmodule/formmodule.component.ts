@@ -28,7 +28,7 @@ export class FormmoduleComponent implements OnInit{
   message: string = "What will I say???"
 
   AddCustomer(){
-    this.message="I crack corn, and you don't care!"
+    this.message="Here be my message!"
   }
 
   //---------------

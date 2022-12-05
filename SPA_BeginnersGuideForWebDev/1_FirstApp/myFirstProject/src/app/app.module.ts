@@ -8,6 +8,7 @@ import { StudentComponent } from './student/student.component';
 import { CustomerComponent } from './customer/customer.component';
 import { AddcustomerComponent } from './addcustomer/addcustomer.component';
 import { FormmoduleComponent } from './formmodule/formmodule.component';
+import { CustomerlistComponent } from './customerlist/customerlist.component';
 
 
 @NgModule({
@@ -17,7 +18,8 @@ import { FormmoduleComponent } from './formmodule/formmodule.component';
     //CustomerComponent,
     //AddcustomerComponent
     routingComponents, //this holds customer and addcustomer components
-    FormmoduleComponent 
+    FormmoduleComponent, 
+    CustomerlistComponent 
   ],
   imports: [
     BrowserModule,
