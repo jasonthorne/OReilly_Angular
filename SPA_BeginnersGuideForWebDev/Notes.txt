@@ -1,0 +1,6 @@
+install cli:
+npm install -g @angular/cli
+
+install project shell (USE BASH TERMINAL :P):
+ng new myFirstProject
+
