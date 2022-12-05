@@ -33,3 +33,17 @@
         </tr>
     </table>
 </form>
+
+
+<!--<b>{{customerName}}</b> <!-- can be used without tags too :P -->
+
+<input type="text" [value]="customerName" /> <!--binding the value with the customer name-->
+<br/>
+<br/>
+<input type="button" value="Add Customer" (click)="AddCustomer()"> <!-- adding click event to button using formmodule omponent method-->
+<p>{{message}}</p>
+
+<!-- two way data binding +++++++++++++++++++++-->
+
+<input type="text" [(ngModel)]="customerName">
+{{customerName}}

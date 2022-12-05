@@ -15,10 +15,23 @@ export class FormmoduleComponent implements OnInit{
     throw new Error('Method not implemented.');
   }
 
+  //---------------
   onSave(form: NgForm){ //create onSave, passing ngForm
 
     console.log(form) //print form
     alert(form.value.useremail) //pop up alert, showing entered email
   }
+  //---------------
+
+  //---------------
+  customerName: string = "Jimmy";
+  message: string = "What will I say???"
+
+  AddCustomer(){
+    this.message="I crack corn, and you don't care!"
+  }
+
+  //---------------
+
 
 }
