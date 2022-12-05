@@ -18,3 +18,30 @@ ctrl+c
 -------------
 
 2nd vid:
+
+create module:
+ng generate module moduleName
+
+-------------
+
+3rd vid:
+
+create componenet:
+ng generate comonent componentName
+
+
+-------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
