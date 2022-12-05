@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./student.component.css']
 })
 export class StudentComponent implements OnInit{
-  studentName:string = "student name";
+  studentName:string = "Yo Dawg!";
   constructor(){}
 
   ngOnInit(): void {

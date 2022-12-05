@@ -17,6 +17,6 @@ import { CustomerComponent } from './customer/customer.component';
     AppRoutingModule
   ],
   providers: [],
-  bootstrap: [CustomerComponent]
+  bootstrap: [CustomerComponent, StudentComponent]
 })
 export class AppModule { }
