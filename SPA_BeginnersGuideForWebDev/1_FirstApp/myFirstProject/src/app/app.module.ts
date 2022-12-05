@@ -13,13 +13,13 @@ import { AddcustomerComponent } from './addcustomer/addcustomer.component';
     StudentComponent,
     //CustomerComponent,
     //AddcustomerComponent
-    AddcustomerComponent
+    routingComponents //this holds customer and addcustomer components
   ],
   imports: [
     BrowserModule,
     AppRoutingModule
   ],
   providers: [],
-  bootstrap: [CustomerComponent, StudentComponent]
+  bootstrap: [AppComponent/*CustomerComponent, StudentComponent*/]
 })
 export class AppModule { }
