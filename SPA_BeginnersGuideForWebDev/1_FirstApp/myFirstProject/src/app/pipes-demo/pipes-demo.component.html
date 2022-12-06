@@ -1,0 +1,10 @@
+<p>pipes-demo works!</p>
+
+<!-- use pipe to make myValue uppercase: -->
+<h4>{{ myValue | uppercase }}</h4>
+
+<!-- convert currency (can also do things like time, dates etc..)-->
+<h4>{{ 10 | currency: 'USD' }}</h4>
+
+<!-- Using custom pipe (found in demo.pipe.ts): NOTE: can use multiple pipes -->
+<h4>{{ myValue | uxpipe | uppercase }}</h4>

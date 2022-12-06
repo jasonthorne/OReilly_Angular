@@ -3,12 +3,14 @@ import { RouterModule, Routes } from '@angular/router';
 import { AddcustomerComponent} from './addcustomer/addcustomer.component';
 import { CustomerComponent} from './customer/customer.component';
 import { CustomerlistComponent } from './customerlist/customerlist.component';
+import { PipesDemoComponent } from './pipes-demo/pipes-demo.component';
 
 
 const routes: Routes = [
   {path: 'customer', component: CustomerComponent},
   {path: 'addcustomer', component: AddcustomerComponent},
   {path: 'customerlist', component: CustomerlistComponent},
+  {path: 'pipes-demo', component: PipesDemoComponent}
 
 ];
 
@@ -17,4 +19,4 @@ const routes: Routes = [
   exports: [RouterModule]
 })
 export class AppRoutingModule {}
-export const routingComponents = [CustomerComponent, AddcustomerComponent]
+export const routingComponents = [CustomerComponent, AddcustomerComponent, PipesDemoComponent]

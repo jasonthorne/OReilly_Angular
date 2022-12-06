@@ -9,6 +9,9 @@ import { CustomerComponent } from './customer/customer.component';
 import { AddcustomerComponent } from './addcustomer/addcustomer.component';
 import { FormmoduleComponent } from './formmodule/formmodule.component';
 import { CustomerlistComponent } from './customerlist/customerlist.component';
+import { PipesDemoComponent } from './pipes-demo/pipes-demo.component';
+
+import { uxpipe } from './ProjectPipes/demo.pipe';
 
 
 @NgModule({
@@ -19,7 +22,9 @@ import { CustomerlistComponent } from './customerlist/customerlist.component';
     //AddcustomerComponent
     routingComponents, //this holds customer and addcustomer components
     FormmoduleComponent, 
-    CustomerlistComponent 
+    CustomerlistComponent, 
+    PipesDemoComponent,
+    uxpipe
   ],
   imports: [
     BrowserModule,
