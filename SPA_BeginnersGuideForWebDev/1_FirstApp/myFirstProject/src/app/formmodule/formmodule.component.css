@@ -1,0 +1,5 @@
+
+/* turns input box red if input is invalid */
+input.ng-invalid.ng-touched{
+    border: 5px solid red;
+}

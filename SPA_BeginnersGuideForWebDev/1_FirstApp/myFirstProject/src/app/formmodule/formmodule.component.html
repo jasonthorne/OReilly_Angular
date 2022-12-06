@@ -7,7 +7,7 @@
                 <label>Name</label>
             </td>
             <td>
-                <input type="text" id="txtName" name="username" ngModel />
+                <input type="text" id="txtName" name="username" required ngModel />
             </td>
         </tr>
         <tr>
@@ -15,7 +15,7 @@
                 <label>Email</label>
             </td>
             <td>
-                <input type="email" id="txtEmail" name="useremail" ngModel />
+                <input type="email" id="txtEmail" name="useremail" required email ngModel />
             </td>
         </tr>
         <tr>
@@ -23,12 +23,12 @@
                 <label>Phone</label>
             </td>
             <td>
-                <input type="text" id="txtPhone" name="userphone" ngModel />
+                <input type="text" id="txtPhone" name="userphone" required ngModel />
             </td>
         </tr>
         <tr>
             <td>
-                <input type="submit" id="txtSubmit" value="save" />
+                <input type="submit" id="txtSubmit" value="save" [disabled]="!myForm.valid"/>
             </td>
         </tr>
     </table>
