@@ -12,6 +12,7 @@ import { CustomerlistComponent } from './customerlist/customerlist.component';
 import { PipesDemoComponent } from './pipes-demo/pipes-demo.component';
 
 import { uxpipe } from './ProjectPipes/demo.pipe';
+import { PushSliceDemoComponent } from './push-slice-demo/push-slice-demo.component';
 
 
 @NgModule({
@@ -24,7 +25,8 @@ import { uxpipe } from './ProjectPipes/demo.pipe';
     FormmoduleComponent, 
     CustomerlistComponent, 
     PipesDemoComponent,
-    uxpipe
+    uxpipe,
+    PushSliceDemoComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,24 @@
+<p>push-slice-demo works!</p>
+
+<table border="1">
+    <tr>
+        <th>Name</th>
+    </tr>
+    <tr *ngFor="let employee of employees index as i">
+        <td>
+            {{employee.name}}
+        </td>
+        <td>
+            <input type="button" value="Remove Employee" (click)="RemoveEmployee(i)"/>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <input type="text" [(ngModel)]="employeeName"/>
+        </td>
+        <td>
+            <input type="button" value ="Add Employee" (click)="AddEmployee()"/>
+        </td>
+    </tr>
+
+</table>
