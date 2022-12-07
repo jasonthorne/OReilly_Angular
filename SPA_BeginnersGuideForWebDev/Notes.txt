@@ -15,20 +15,19 @@ http://localhost:4200/
 stop serving app:
 ctrl+c
 
--------------
+install bootstrap (nav to project folder, as this installs locally):
+npm install --save bootstrap@3.4.1 (or any version you'd like :P)
 
-2nd vid:
+
+-------------
 
 create module:
 ng generate module moduleName
 
 -------------
 
-3rd vid:
-
 create componenet:
 ng generate component componentName
-
 
 -------------
 
