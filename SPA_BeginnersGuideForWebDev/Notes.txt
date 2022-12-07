@@ -3,8 +3,8 @@
 install cli:
 npm install -g @angular/cli
 
-install project shell (USE BASH TERMINAL :P):
-ng new myFirstProject
+install project shell (USE BASH TERMINAL :P. none strict mode is optional):
+ng new myFirstProject --no-strict
 
 build and run project (when in project dir :P):
 ng serve
