@@ -16,7 +16,10 @@ stop serving app:
 ctrl+c
 
 install bootstrap (nav to project folder, as this installs locally):
-npm install --save bootstrap@3.4.1 (or any version you'd like :P)
+npm install --save bootstrap@3.4.1 (or any version you'd like. this one was needed for max's course :P)
+
+add bootstrap styles:
+angular.json > "styles:["node_modules/bootstrap/dist/css/bootstrap.min.css", "plus whatever else was here!"]" 
 
 
 -------------
