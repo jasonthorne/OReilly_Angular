@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { fromEvent } from 'rxjs';
 
 @Component({
 
@@ -36,6 +37,15 @@ export class ServersComponent {
   //method to be triggered from listener within template:
   onCreateServer(){
   this.serverCreationStatus = "server was created";
+  }
+
+  //------------------------
+
+  serverName: string = "";
+
+  onUpdateServerName(event: Event){ //recieve event of type Event. Passed by event binded input event
+    //console.log(event);
+    this.serverName = (<HTMLInputElement>event.target).value; //inform typescript that the html element will be n input element
   }
 
 

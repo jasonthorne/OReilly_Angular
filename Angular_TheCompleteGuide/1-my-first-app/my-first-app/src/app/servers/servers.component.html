@@ -1,5 +1,11 @@
-<p>I be the server component</p>
-<!-- server component's selector added multiple times, to have mutiple of the same component -->
+<label>Server Name</label>
+
+<!-- +++++++++++here we listen to the input event, which fires update name method on every keystroke: 
+$event is a reserved variable name, used when event binding. This passes all data pertaining to that event +++++++++++++++-->
+<input type="text" class="form-control"
+(input)="onUpdateServerName($event)">
+<p>{{serverName}}</p>
+
 
 <!-- ++++++++++ below binds the disabled property (property binding) to the value (or opposite of in this case) of allowNewServer:
     also uses event binding to bind an event (click in this case) to onCreateServer() ++++++++++++++ -->
@@ -19,6 +25,7 @@
 -->
 
 <p>{{serverCreationStatus}}</p>
+<!-- server component's selector added multiple times, to have mutiple of the same component -->
 <app-server></app-server>
 <app-server></app-server>
 <app-server></app-server>
