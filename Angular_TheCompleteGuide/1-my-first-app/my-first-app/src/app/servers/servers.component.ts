@@ -10,13 +10,23 @@ import { Component } from '@angular/core';
   selector: '.app-servers',
 
   //NOTE - Templates HAVE to be presnet here. Either external or internal
-  /*templateUrl: './servers.component.html',*/ /* link to external html*/
+  templateUrl: './servers.component.html', /* link to external html*/
   /* +++++++++++++++ intrnal html:  +++++++++++++ */
-  template: `
+ /* template: `
     <app-server></app-server>
     <app-server></app-server>`, //NOTE - backtick is what's allowing this line break in htis string :P
+  */
   styleUrls: ['./servers.component.css']
 })
 export class ServersComponent {
-  
+
+   allowNewServer: boolean = false;
+
+   constructor(){
+    //set time out, passing anon function wihch allows new server after 2 secs
+    setTimeout(() => {
+      this.allowNewServer = true;
+    } , 2000);
+   }
+
 }

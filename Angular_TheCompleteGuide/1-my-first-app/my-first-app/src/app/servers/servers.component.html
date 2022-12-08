@@ -1,5 +1,16 @@
 <p>I be the server component</p>
 <!-- server component's selector added multiple times, to have mutiple of the same component -->
+
+<!-- ++++++++++ below binds the disabled property to the value (or opposite of in this case) of allowNewServer: ++++++++++++++ -->
+<button class="btn btn-primary" [disabled]="!allowNewServer">Add Server</button>
+
+<!-- ++++++ string interpolation to show boolean: +++++++++ -->
+<br />string interpolation:
+<p>{{allowNewServer}}</p>
+
+<!-- +++++++++ property binding to dynamically show boolean as inner text: ++++++++++-->
+property binding:
+<p [innerText]="allowNewServer"></p>
 <app-server></app-server>
 <app-server></app-server>
 <app-server></app-server>
