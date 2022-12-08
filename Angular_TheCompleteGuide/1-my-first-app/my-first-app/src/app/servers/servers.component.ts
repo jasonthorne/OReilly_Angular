@@ -20,13 +20,24 @@ import { Component } from '@angular/core';
 })
 export class ServersComponent {
 
-   allowNewServer: boolean = false;
+  allowNewServer: boolean = false;
 
-   constructor(){
-    //set time out, passing anon function wihch allows new server after 2 secs
-    setTimeout(() => {
-      this.allowNewServer = true;
-    } , 2000);
-   }
+  constructor(){
+  //set time out, passing anon function wihch allows new server after 2 secs
+  setTimeout(() => {
+    this.allowNewServer = true;
+  } , 2000);
+}
+
+  //------------------------
+
+  serverCreationStatus: string = "No server was created!"
+
+  //method to be triggered from listener within template:
+  onCreateServer(){
+  this.serverCreationStatus = "server was created";
+  }
+
+
 
 }
