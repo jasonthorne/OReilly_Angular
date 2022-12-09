@@ -22,6 +22,7 @@ import { fromEvent } from 'rxjs';
 export class ServersComponent {
 
   allowNewServer: boolean = false;
+  serverName: string = "Test Server";
 
   constructor(){
   //set time out, passing anon function wihch allows new server after 2 secs
@@ -36,12 +37,10 @@ export class ServersComponent {
 
   //method to be triggered from listener within template:
   onCreateServer(){
-  this.serverCreationStatus = "server was created";
+    this.serverCreationStatus = "server was created. Name is: " + this.serverName;
   }
 
   //------------------------
-
-  serverName: string = "Test Server";
 
   onUpdateServerName(event: Event){ //recieve event of type Event. Passed by event binded input event
     //console.log(event);
