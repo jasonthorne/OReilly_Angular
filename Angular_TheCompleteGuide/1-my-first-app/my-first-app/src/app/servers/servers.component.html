@@ -1,9 +1,14 @@
 <label>Server Name</label>
 
-<!-- +++++++++++here we listen to the input event, which fires update name method on every keystroke: 
+<!-- +++++++++++ONE WAY DATA BINDING. here we listen to the input event, which fires update name method on every keystroke: 
 $event is a reserved variable name, used when event binding. This passes all data pertaining to that event +++++++++++++++-->
-<input type="text" class="form-control"
+<!--<input type="text" class="form-control"
 (input)="onUpdateServerName($event)">
+<p>{{serverName}}</p>-->
+
+<!-- 2 WAY DATA BINDING: -->
+<input type="text" class="form-control"
+[(ngModel)]="serverName"> <!--@@@@@@@@@@@@@@ NOTE: need to imort FormsModule in app.module for this to work in forms @@@@@@@@2-->
 <p>{{serverName}}</p>
 
 

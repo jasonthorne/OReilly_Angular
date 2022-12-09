@@ -14,7 +14,7 @@ import { ServersComponent } from './servers/servers.component'; //++++++++++++im
   ],
   imports: [ //++++++++++Alows us to add modules to our module (i.e bunde them)
     BrowserModule,
-    ///FormsModule //add forms module to imports 
+    FormsModule //add forms module to imports 
   ],
   providers: [],
   bootstrap: [AppComponent] //+++++tells angular which component(s) it should be aware of at the time the app starts ++++++++++++++

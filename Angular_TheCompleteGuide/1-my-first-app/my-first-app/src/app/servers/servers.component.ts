@@ -41,7 +41,7 @@ export class ServersComponent {
 
   //------------------------
 
-  serverName: string = "";
+  serverName: string = "Test Server";
 
   onUpdateServerName(event: Event){ //recieve event of type Event. Passed by event binded input event
     //console.log(event);
