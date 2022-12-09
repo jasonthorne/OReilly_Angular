@@ -1,1 +1,25 @@
-hullo world!
+<!-- bootsrap styling: -->
+<div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        <label>Add Name:</label><br />
+        <!-- 2 WAY DATA BINDING: -->
+        <input type="text" class="form-control"
+        [(ngModel)]="userName"
+        (input)="onUpdateCanResetUserName()">
+        <br />
+        <label>Name is: {{userName}}</label>
+
+        <!-- ++++++++++ below binds the disabled property (property binding) to the value (or opposite of in this case) of allowNewServer:
+        also uses event binding to bind an event (click in this case) to onCreateServer() ++++++++++++++ -->
+        <br />
+        <button class="btn btn-primary" 
+        [disabled]="!canResetUserName" 
+        (click)="resetUserName()" 
+        >Reset Username</button>
+                
+  
+  
+      </div>
+    </div>
+  </div>

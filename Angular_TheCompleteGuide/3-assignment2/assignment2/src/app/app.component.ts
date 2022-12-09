@@ -7,4 +7,17 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'assignment2';
+
+  userName: string = "";
+
+  canResetUserName: boolean = false;
+
+  resetUserName(){
+    this.userName = "";
+    this.canResetUserName = false;
+  }
+
+  onUpdateCanResetUserName(){
+    this.canResetUserName = true;
+  }
 }
