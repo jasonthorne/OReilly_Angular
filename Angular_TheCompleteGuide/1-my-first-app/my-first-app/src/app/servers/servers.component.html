@@ -29,7 +29,11 @@ $event is a reserved variable name, used when event binding. This passes all dat
 <p [innerText]="allowNewServer"></p>
 -->
 
-<p>{{serverCreationStatus}}</p>
+<!--<p>{{serverCreationStatus}}</p>-->
+<!-- +++++++++++++++++++ ngIf DIRECTIVE. can take anything that equates to true or false (statement, method etc)-->
+<p *ngIf="serverCreated">Server was created. Server is: {{serverName}}.</p>
+
+
 <!-- server component's selector added multiple times, to have mutiple of the same component -->
 <app-server></app-server>
 <app-server></app-server>

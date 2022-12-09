@@ -34,9 +34,11 @@ export class ServersComponent {
   //------------------------
 
   serverCreationStatus: string = "No server was created!"
+  serverCreated: boolean = false;
 
   //method to be triggered from listener within template:
   onCreateServer(){
+    this.serverCreated = true;
     this.serverCreationStatus = "server was created. Name is: " + this.serverName;
   }
 
@@ -46,6 +48,10 @@ export class ServersComponent {
     //console.log(event);
     this.serverName = (<HTMLInputElement>event.target).value; //inform typescript that the html element will be n input element
   }
+
+  //-------------------------
+
+ 
 
 
 
