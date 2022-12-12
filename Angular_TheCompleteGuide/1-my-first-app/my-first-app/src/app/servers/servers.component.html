@@ -31,7 +31,12 @@ $event is a reserved variable name, used when event binding. This passes all dat
 
 <!--<p>{{serverCreationStatus}}</p>-->
 <!-- +++++++++++++++++++ ngIf DIRECTIVE. can take anything that equates to true or false (statement, method etc)-->
-<p *ngIf="serverCreated">Server was created. Server is: {{serverName}}.</p>
+<p *ngIf="serverCreated; else noServer">Server was created. Server is: {{serverName}}.</p>
+
+<!-- ++++++++++++ngElse - note the use of ngTemlate, the hash, and thi being called above in the  ngIf :P +++++++++++++++-->
+<ng-template #noServer>
+    <p>No server was created.</p>
+</ng-template>
 
 
 <!-- server component's selector added multiple times, to have mutiple of the same component -->
