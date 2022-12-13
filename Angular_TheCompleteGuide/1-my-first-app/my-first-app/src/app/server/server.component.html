@@ -1,3 +1,3 @@
 <!-- +++++++ string interpolation - can insert anything that returns a string (such as method below) ++++++++ -->
-<!-- +++++++++++ using ngStyle to -->
-<p ngStyle>Server with ID {{serverId}} is {{getServerStatus()}}</p>
+<!-- +++++++++++ using ngStyle to bind to a js obj with style name and value (according to returned method) -->
+<p [ngStyle]="{backgroundColor: getColour()}">Server with ID {{serverId}} is {{getServerStatus()}}</p>
