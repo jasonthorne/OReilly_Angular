@@ -7,4 +7,13 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'assignment3';
+
+  canShowMsg: boolean = false;
+
+  showMsg(){
+    this.canShowMsg = true;
+  }
+
+
+
 }
