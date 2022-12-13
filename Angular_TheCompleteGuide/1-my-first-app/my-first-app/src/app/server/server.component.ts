@@ -4,7 +4,12 @@ import { Component } from "@angular/core";
 //needs passed an object with important meta data info: 
 @Component({
     selector: 'app-server',
-    templateUrl: './server.component.html'
+    templateUrl: './server.component.html',
+    styles: [
+        `.online{
+            color: white;
+        }`
+    ] 
 })
 
 export class ServerComponent{

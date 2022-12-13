@@ -1,3 +1,7 @@
 <!-- +++++++ string interpolation - can insert anything that returns a string (such as method below) ++++++++ -->
-<!-- +++++++++++ using ngStyle to bind to a js obj with style name and value (according to returned method) -->
-<p [ngStyle]="{backgroundColor: getColour()}">Server with ID {{serverId}} is {{getServerStatus()}}</p>
+<!-- +++++++++++ using ngStyle to bind to a js obj with style name and value (according to returned method) - THis allows us to dynamically change styling -->
+<!-- ++++++++ ngClass allows us to dynamically add or remove css classes. takes js obj with name of class, and condition for applying.
+in this instanc, it's whether or not server status var is holding 'online'  -->
+<p [ngStyle]="{backgroundColor: getColour()}"
+   [ngClass]="{online: serverStatus === 'online'}"
+>Server with ID {{serverId}} is {{getServerStatus()}}</p>
