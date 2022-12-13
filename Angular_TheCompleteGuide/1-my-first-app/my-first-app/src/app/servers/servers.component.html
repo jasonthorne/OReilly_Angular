@@ -47,7 +47,6 @@ Note the use of the else, commwnted below this ++++++++-->
 </ng-template>
 -->
 
-<!-- server component's selector added multiple times, to have mutiple of the same component -->
-<app-server></app-server>
-<app-server></app-server>
-<app-server></app-server>
+<!-- @@@@@@@@@@@@@@@@@@@@@@@@@@@ ng For directive to add multipule server component selectors:  -->
+<!-- +++++++++ * shows a structural directive (changing the DOM itself) Note: servers is the array defined in the component.ts -->
+<app-server *ngFor="let server of servers "></app-server>

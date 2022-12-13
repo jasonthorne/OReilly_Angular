@@ -23,6 +23,7 @@ export class ServersComponent {
 
   allowNewServer: boolean = false;
   serverName: string = "Test Server";
+  servers: Array<string> = ['testServer1', 'testServer2'];
 
   constructor(){
   //set time out, passing anon function wihch allows new server after 2 secs
@@ -39,6 +40,7 @@ export class ServersComponent {
   //method to be triggered from listener within template:
   onCreateServer(){
     this.serverCreated = true;
+    this.servers.push(this.serverName); //add new server to servers
     this.serverCreationStatus = "server was created. Name is: " + this.serverName;
   }
 
@@ -49,7 +51,9 @@ export class ServersComponent {
     this.serverName = (<HTMLInputElement>event.target).value; //inform typescript that the html element will be n input element
   }
 
-  //-------------------------
+  //------------------------
+
+  
 
  
 
