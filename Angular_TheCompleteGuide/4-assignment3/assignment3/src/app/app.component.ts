@@ -10,7 +10,7 @@ export class AppComponent {
   title = 'assignment3';
 
   canShowMsg: boolean = false;
-  times: Array<string> = [];
+  times: Array<string> = []; //listen ot if this is at size of 5 +++++++++++++
   
 
   toggleMsg(){
