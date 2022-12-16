@@ -15,9 +15,8 @@ export class AppComponent {
   title = 'assignment3';
 
   canShowMsg: boolean = false;
-  times: Array<string> = []; //listen ot if this is at size of 5 +++++++++++
+  times: Array<string> = []; //listen to if this is at size of 5 +++++++++++
   
-
   toggleMsg(){
 
     //toggle canShowMsg:
@@ -31,6 +30,5 @@ export class AppComponent {
     console.log(this.times);
     
   }
-
 
 }
