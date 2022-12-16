@@ -15,7 +15,7 @@ export class AppComponent {
   title = 'assignment3';
 
   canShowMsg: boolean = false;
-  times: Array<number> = []; //listen ot if this is at size of 5 +++++++++++
+  times: Array<string> = []; //listen ot if this is at size of 5 +++++++++++
   
 
   toggleMsg(){
@@ -25,8 +25,8 @@ export class AppComponent {
     this.canShowMsg = !this.canShowMsg; //++++++++++Much better way of toggling :P
 
     //add date string to dates:
-    //this.times.push(new Date(Date.now()).toLocaleTimeString());
-    this.times.push(this.times.length+1);
+    this.times.push(new Date(Date.now()).toLocaleTimeString());
+    //this.times.push(this.times.length+1);
 
     console.log(this.times);
     

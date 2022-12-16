@@ -8,10 +8,10 @@
       <p *ngIf="canShowMsg" 
       >Secret message! :P</p>
 
-      <!-- show times using NgFor, using string interpelation: -->
-      <div *ngFor = "let time of times"
-      [ngStyle]="{backgroundColor: time >=5 ? 'blue': 'transparent'}"
-      [ngClass]="{online: time >=5}"
+      <!-- show times using NgFor. get time from times, then get index of time in times and style if  5th > item: -->
+      <div *ngFor = "let time of times; let timeIndex = index"
+      [ngStyle]="{backgroundColor: timeIndex >=4 ? 'blue': 'transparent'}"
+      [ngClass]="{online: timeIndex >=4}"
       >{{time}}</div>
 
   </div>
