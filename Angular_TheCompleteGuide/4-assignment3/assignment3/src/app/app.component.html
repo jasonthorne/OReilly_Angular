@@ -6,7 +6,13 @@
       <button class="btn btn-primary" (click)="toggleMsg()">Display Details</button>
     </div>
       <p *ngIf="canShowMsg" 
-      [ngStyle]="{backgroundColor: getColour()}"
-      >Here be details!</p>
+      >Secret message! :P</p>
+
+      <!-- show times using NgFor, using string interpelation: -->
+      <div *ngFor = "let time of times"
+      [ngStyle]="{backgroundColor: time >=5 ? 'blue': 'transparent'}"
+      [ngClass]="{online: time >=5}"
+      >{{time}}</div>
+
   </div>
 </div>

@@ -15,38 +15,21 @@ export class AppComponent {
   title = 'assignment3';
 
   canShowMsg: boolean = false;
-  times: Array<string> = []; //listen ot if this is at size of 5 +++++++++++
-  canChangeStyles = false;
+  times: Array<number> = []; //listen ot if this is at size of 5 +++++++++++
   
 
   toggleMsg(){
 
     //toggle canShowMsg:
-    this.canShowMsg === false ? this.canShowMsg = true: this.canShowMsg = false;
+    //this.canShowMsg === false ? this.canShowMsg = true: this.canShowMsg = false;
+    this.canShowMsg = !this.canShowMsg; //++++++++++Much better way of toggling :P
 
     //add date string to dates:
-    this.times.push(new Date(Date.now()).toLocaleTimeString());
-
-    //change styles when hit length 5:
-    if(this.times.length == 5){
-      this.canChangeStyles = true;
-    }
-
+    //this.times.push(new Date(Date.now()).toLocaleTimeString());
+    this.times.push(this.times.length+1);
 
     console.log(this.times);
-
-    if(this.canChangeStyles){
-      console.log("change styles");
-    }
-
-
     
-  }
-
-
-  getColour(){
-    //return green or red deepending on server status:
-    return this.canChangeStyles === false ? 'transparent': 'blue';
   }
 
 
