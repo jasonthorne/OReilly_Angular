@@ -5,8 +5,7 @@
     <div class="col-xs-12">
       <button class="btn btn-primary" (click)="toggleMsg()">Display Details</button>
     </div>
-      <p *ngIf="canShowMsg" 
-      >Secret message! :P</p>
+      <p *ngIf="canShowMsg">Secret message! :P</p>
 
       <!-- show times using NgFor. get time from times, then get index of time in times and style if  5th > item: -->
       <div *ngFor = "let time of times; let timeIndex = index"
