@@ -3,19 +3,25 @@
         <button class="btn btn-success">New Recipe</button>
     </div>
 </div>
+
+<hr>
+
 <div class="row">
     <div class="col-xs-12">
 
-        <!-- ADDED HERE FOR NOW :P -->
-        <a href="#" class="list-group-item clearfix">
+        <!-- ADDED HERE FOR NOW :P =========================================-->
+        <a href="#" class="list-group-item clearfix" 
+            *ngFor="let recipe of recipes"> <!-- +++++++++++ loop through all the recipes with ngFor ++++++++ -->
             <div class="pull-left">
-                <h4 class="list-group-item-heading">Recipe Name</h4>
-                <p class="list-group-item-text">Recipe Description</p>
+                <h4 class="list-group-item-heading">{{recipe.name}}</h4> <!-- gettig recipe name from looped recipe -->
+                <p class="list-group-item-text">{{recipe.description}}</p>
             </div>
             <span class="pull-right">
-                <img src="" class="img-responsive" style="max-height: 50px;">
+                <!-- +++++++++++++++++++++ getting img src using property binding NOT string interpolation from the model ++++++++++++++ -->
+                <img [src]="recipe.imagePath" alt="{{recipe.name}}" class="img-responsive" style="max-height: 50px;">
             </span>
         </a>
+        <!-- ADDED HERE FOR NOW :P =========================================-->
 
         <app-recipe-item></app-recipe-item>
     </div>

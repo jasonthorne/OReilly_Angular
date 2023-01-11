@@ -8,6 +8,8 @@ import { Recipe } from '../recipe.model'; //++++++++++++ Import recipe model
 })
 export class RecipeListComponent {
   recipes: Recipe[] = [ //recipes is an array of Recipe (model) objects ++++++++
-    new Recipe("a", "b", "https://ichef.bbci.co.uk/food/ic/food_16x9_832/recipes/british_shakshuka_26737_16x9.jpg")];
+    new Recipe("name1", "description1", "https://ichef.bbci.co.uk/food/ic/food_16x9_832/recipes/british_shakshuka_26737_16x9.jpg"),
+    new Recipe("name2", "description2", "https://ichef.bbci.co.uk/food/ic/food_16x9_832/recipes/british_shakshuka_26737_16x9.jpg")
+  ];
 
 }
