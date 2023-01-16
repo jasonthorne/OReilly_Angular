@@ -6,7 +6,7 @@ npm install -g @angular/cli
 install project shell (USE BASH TERMINAL :P. none strict mode is optional):
 ng new myFirstProject --no-strict
 
-build and run project (when in project dir :P):
+build and run project (when in project dir :P - i.e where .angular folder lives):
 ng serve
 
 dev server:
