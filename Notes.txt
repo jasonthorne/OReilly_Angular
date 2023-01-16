@@ -37,7 +37,8 @@ ng generate component componentName
 
 https://learning.oreilly.com/videos/angular-the/9781788998437/9781788998437-video2_27/
 
-
+typescript playground:
+http://www.typescriptlang.org/play/
 
 
 
